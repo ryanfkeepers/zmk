@@ -6,5 +6,5 @@
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 ---
 include:
-  - board: ??seeeduino_xiao_ble
+  - board: waveshare_rp2040_plus
     shield: umbra

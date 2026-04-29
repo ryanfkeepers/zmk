@@ -1,0 +1,43 @@
+/dts-v1/;
+#include <raspberrypi/rp2040.dtsi>
+
+/ {
+    model = "Waveshare RP2040-Plus";
+    compatible = "waveshare,rp2040-plus";
+
+    chosen {
+        zephyr,console = &uart0;
+        zephyr,shell-uart = &uart0;
+        zephyr,flash = &flash0;
+        zephyr,code-partition = &slot0_partition;
+    };
+
+    aliases {
+        led0 = &led_pin;
+    };
+
+    leds {
+        compatible = "gpio-leds";
+        led_pin: led_0 {
+            gpios = <&gpio0 25 GPIO_ACTIVE_HIGH>;
+            label = "Onboard LED";
+        };
+    };
+};
+
+/* External QSPI flash */
+&flash0 {
+    reg = <0x0 0x400000>; /* 4MB flash; adjust if you have 16MB */
+    status = "okay";
+};
+
+/* USB */
+&usbctrl {
+    status = "okay";
+};
+
+&uart0 {
+    status = "okay";
+    current-speed = <115200>;
+};
+

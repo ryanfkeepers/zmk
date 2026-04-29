@@ -1,0 +1,13 @@
+if BOARD_WAVESHARE_RP2040_PLUS
+
+config ZMK_KEYBOARD_NAME
+    default "Waveshare RP2040-Plus"
+
+config USB
+    default y
+
+config USB_DEVICE_STACK
+    default y
+
+endif
+
