@@ -48,7 +48,5 @@
 
     chosen {
         zmk,physical_layout = &physical_layout_main;
-        /delete-property/ zephyr,console;
-        /delete-property/ zephyr,shell-uart;
     };
 };
