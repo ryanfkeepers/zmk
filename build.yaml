@@ -5,9 +5,8 @@
 # pass flags to the build command, `snippet` to add a Zephyr snippet, and
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 ---
-settings:
-  extra_modules:
-    - .
+extra_modules:
+  - .
 
 include:
   - board: rp2040_plus
