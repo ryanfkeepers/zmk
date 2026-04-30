@@ -153,6 +153,8 @@
 
 &gpio0 {
 	status = "okay";
+	gpio-controller;
+	#gpio-cells = <2>;
 };
 
 &rtc {
