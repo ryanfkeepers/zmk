@@ -4,7 +4,6 @@
 if SHIELD_UMBRA
 
 config ZMK_KEYBOARD_NAME
-    bool "Umbra keyboard"
     default "umbra"
 
 endif

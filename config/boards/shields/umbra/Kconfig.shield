@@ -2,5 +2,5 @@
 # SPDX-License-Identifier: MIT
 
 config SHIELD_UMBRA
-   def_bool $(shields_list_contains,umbra)
-   depends on ZMK_KEYBOARD
+  def_bool $(shields_list_contains,umbra)
+  select GPIO

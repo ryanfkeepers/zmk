@@ -6,7 +6,7 @@
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 ---
 include:
-  - board: rp2040_plus
+  - board: waveshare_rp2040_plus
     shield: umbra
-  - board: rp2040_plus
+  - board: waveshare_rp2040_plus
     shield: settings_reset
