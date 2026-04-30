@@ -3,6 +3,6 @@ id: umbra
 name: Umbra
 type: shield
 url: https://github.com/skarrmann/umbra
-requires: [waveshare_rp2040_plus]
+requires: [rp2040_plus]
 features:
   - keys
