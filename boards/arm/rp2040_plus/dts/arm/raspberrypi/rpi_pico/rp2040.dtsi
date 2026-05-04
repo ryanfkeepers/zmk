@@ -247,6 +247,7 @@
 			gpio-map-pass-thru = <0x1f 0x3f>;
 			gpio-map = <0x0 0x0 &gpio0 0x0 0x0>;
 
+      gpio-controller;
 			#gpio-cells = <2>;
 			#address-cells = <1>;
 			#size-cells = <0>;
